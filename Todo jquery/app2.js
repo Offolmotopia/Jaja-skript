@@ -14,7 +14,7 @@ $(function () {
 
 
     serialize = JSON.parse(s.getItem("elements"))
-    serialize = serialize.filter(el => el.trim() !== '')
+    serialize = serialize.filter(el => el !== '')
     // deserialize
 
     serialize.forEach(element => {
@@ -44,7 +44,7 @@ $(function () {
     })
 
     function save() {
-        serialize = serialize.filter(el => el.trim() !== '')
+        serialize = serialize.filter(el => el !== '')
         s.setItem("elements", JSON.stringify(serialize))
     }
 

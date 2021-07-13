@@ -1,0 +1,24 @@
+{
+  "name": "webapp",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "jija"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "eventEmitter": "^5.2.8",
+    "peerjs": "^0.3.14",
+    "jquery": "^3.6.0",
+    "bootstrap": "^5.0.2",
+    "react": "^16.1.0"
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>react chat</title>
+</head>
+
+<body>
+    <section id="container">
+        <h1>React Chat</h1>
+        <div>
+            <label for="username-input">Username</label>
+            <input type="text" id="username-input" class="form-control" placeholder="enter your username">
+            <br>
+            <button id="connect-btn" class="waves-effect waves-light btn btn-primary red right">Connect</button>
+        </div>
+    </section>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="lib/react/react-with-addons.js"></script>
+    <script src="lib/react/JSXTransformer.js"></script>
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/peerjs/peer.js"></script>
+    <script src="lib/eventEmitter/EventEmitter.js"></script>
+    <script type="text/jsx" src="src/Action.js"></script>
+    <script type="text/jsx" src="emitters/ChatEmmiter.js"></script>
+    <script type="text/jsx" src="src/components/ChatBox.jsx"></script>
+    <script type="text/jsx" src="src/components/UsersList.jsx"></script>
+    <script type="text/jsx" src="src/components/ChatMessage.jsx"></script>
+    <script type="text/jsx" src="src/components/MessageInput.jsx"></script>
+    <script type="text/jsx" src="src/components/MessageList.jsx"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/jsx" src="src/app.jsx"></script>
+</body>
+
+</html>
